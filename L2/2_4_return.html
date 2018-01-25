@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>函数返回值</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//创建有返回值的函数
+		function getArea(width,height){
+			var result=width*height;
+			return result;
+		}
+	</script>
+	<h2>宽度是: 3, 高度是: 4的长方形面积是: 
+		<script type="text/javascript">
+			//调用有返回值函数
+			var area = getArea(3,4);
+			document.write(area);
+		</script>
+	</h2>
+</body>
+</html>

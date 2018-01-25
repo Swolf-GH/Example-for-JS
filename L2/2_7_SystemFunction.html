@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>系统函数-验证后求和</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function calc(){
+			var num1 = document.getElementById("op1").value;
+			var num2 = document.getElementById("op2").value;
+			if(num1.trim() != "" && num2.trim() != "") {
+				if (!isNaN(num1) && !isNaN(num2)) {
+					document.getElementById("result").value = parseFloat(num1)+parseFloat(num2);
+				}else{
+					alert("请输入正确的数值");
+				}
+			}else{
+				alert("请输入两个操作数");
+			}
+		}
+	</script>
+	<input type="text" id="op1" name=""> + 
+	<input type="text" id="op2" name=""> =
+	<input type="text" id="result" name="">
+	<br>
+	<input type="button" value="计算" onclick="calc()" name="">
+</body>
+</html>

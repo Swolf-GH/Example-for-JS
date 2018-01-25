@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>匿名函数</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//匿名函数
+		function(width,height){
+			document.write("面积是: "+width*height);
+		}
+	</script>
+	<!-- 匿名函数的调用 -->
+	<script type="text/javascript">
+		(function(width,height){
+			document.write("面积是: "+width*height);
+		}) (3,4);
+	</script>
+</body>
+</html>

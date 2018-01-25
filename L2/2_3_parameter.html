@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>参数</title>
+</head>
+<body>
+	<!-- 创建函数 -->
+	<script type="text/javascript">
+		function getTotal(){
+			var count; // 总人数
+			var sum = 0; //总工资
+			count = arguments.length;
+			for(var i=0;i<arguments.length;i++){
+				sum += arguments[i];
+			}
+			document.write("总人数是: "+count+", 总工资是: "+sum);
+		}
+	</script>
+	<!-- 调用函数 -->
+	<h2>A公司:
+		<script type="text/javascript">
+			getTotal(2000,4000,6000,8000);
+		</script>
+	</h2>
+	<h2>B公司:
+		<script type="text/javascript">
+			getTotal(12000,14000,16000,18000,20000);
+		</script>
+	</h2>
+</body>
+</html>
