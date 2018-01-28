@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>onload 与 onunload</title>
+</head>
+<body onunload="alert('触发了 onunload 事件')">
+	<script type="text/javascript">
+		window.onload=function(){
+			alert("触发了 onload 事件.");
+		};
+		/*window.onunload=function(){
+			alert("您确定要离开吗?");
+		};*/
+	</script>
+</body>
+</html>

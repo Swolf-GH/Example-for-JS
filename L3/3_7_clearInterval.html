@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>clearInterval</title>
+</head>
+<body>
+	<p style="text-align: center;"><img src="images/F1.png" id="pic"></p>
+	<p style="text-align: center;">
+		<input type="button" value="开始" onclick="play()" name="">
+		<input type="button" value="停止" onclick="stop()" name="">
+		<script type="text/javascript">
+			var i = 1;//保存动画当前播放的静态画面索引
+			function change(){
+				if(i<6){
+					i++;
+				}else{
+					i = 1;//播放到最后一幅时,再从头开始
+				}
+				document.getElementById('pic').src="images/F"+i+".png";
+			}
+			var dh;
+			function play(){
+				dh = setInterval("change()",100);
+			}
+			function stop(){
+				clearInterval(dh);
+			}
+		</script>
+	</p>
+</body>
+</html>
