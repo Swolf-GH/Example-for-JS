@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>动态添加标题</title>
+	<script type="text/javascript">
+		function setContent(){
+			var obj=document.getElementById('content');
+			obj.innerHTML="<h3>动态添加标题</h3>"
+		}
+	</script>
+</head>
+<body>
+	<div id="content"></div>
+	<input type="button" value="添加内容" onclick="setContent()" name="">
+</body>
+</html>

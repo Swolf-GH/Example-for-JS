@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>location对象</title>
+	<script type="text/javascript">
+		function changeURL() {
+			//获取选择列表项的值
+			var url = document.getElementById('sel').value;
+			//设置当前窗口浏览器地址栏上的值
+			window.location.href = url;
+			//window.open("url");
+		}
+	</script>
+</head>
+<body>
+	<h3>友情连接: </h3>
+	<select id="sel" onchange="changeURL()">
+		<option value="https://www.baidu.com">百度</option>		
+		<option value="https://www.bing.com">必应</option>		
+		<option value="https://www.sogou.com/">搜狗</option>
+		<option value="https://www.google.com">谷歌</option>
+	</select>
+</body>
+</html>
